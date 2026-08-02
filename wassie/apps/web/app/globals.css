@@ -2,18 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
-:root{
-  --accent: #7c3aed;
+
+body{
+
+background:#050706;
+
+color:white;
+
+font-family:
+Inter,
+Arial,
+sans-serif;
+
 }
 
-html, body, #__next {
-  height: 100%;
+
+.glow{
+
+box-shadow:
+
+0 0 30px
+rgba(0,255,100,.25);
+
 }
 
-body {
-  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-}
 
-.container {
-  max-width: 1100px;
+.panel{
+
+background:
+
+linear-gradient(
+145deg,
+#101511,
+#050706
+);
+
+border:
+
+1px solid
+rgba(0,255,120,.25);
+
+border-radius:24px;
+
 }
