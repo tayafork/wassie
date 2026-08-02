@@ -1,23 +1,63 @@
-import FeatureCard from './FeatureCard'
+import {ROOMS}
+from "@/data/rooms";
 
-export default function RoomPreview({ room }: { room: any }){
-  return (
-    <article className="bg-white rounded-lg shadow p-4">
-      <div className="flex items-center gap-4">
-        <div className="w-16 h-16 bg-slate-100 rounded-md flex items-center justify-center">
-          <span className="text-xl">{room.emoji}</span>
-        </div>
-        <div>
-          <h4 className="font-semibold">{room.name}</h4>
-          <p className="text-sm text-slate-500">{room.description}</p>
-        </div>
-      </div>
 
-      <div className="mt-4 grid grid-cols-2 gap-2">
-        {room.features.map((f: any) => (
-          <FeatureCard key={f.title} feature={f} />
-        ))}
-      </div>
-    </article>
-  )
+export default function RoomPreview(){
+
+
+return(
+
+<section className="grid md:grid-cols-5 gap-5">
+
+
+{
+ROOMS.map(room=>(
+
+
+<div
+key={room.name}
+className="panel p-5"
+>
+
+
+<div className="text-4xl">
+
+🏠
+
+</div>
+
+
+<h3 className="mt-3">
+
+{room.name}
+
+</h3>
+
+
+<p className="text-wassie">
+
+{room.bonus}
+
+</p>
+
+
+<p>
+
+{room.price}
+
+</p>
+
+
+</div>
+
+
+))
+
+
+}
+
+</section>
+
+)
+
 }
