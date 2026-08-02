@@ -1,32 +1,39 @@
-export const ROOMS = [
-  {
-    id: 'room-1',
-    name: 'Starter Den',
-    emoji: '🪴',
-    description: 'A cozy starter room to begin your journey.',
-    features: [
-      { title: 'Comfort', value: 'Low' },
-      { title: 'Mining', value: 'Basic' },
-    ],
-  },
-  {
-    id: 'room-2',
-    name: 'Crystal Cave',
-    emoji: '💎',
-    description: 'A shimmering cave with rare resources.',
-    features: [
-      { title: 'Comfort', value: 'Medium' },
-      { title: 'Mining', value: 'Improved' },
-    ],
-  },
-  {
-    id: 'room-3',
-    name: 'Sky Loft',
-    emoji: '☁️',
-    description: 'A lofty room above the clouds.',
-    features: [
-      { title: 'Comfort', value: 'High' },
-      { title: 'Mining', value: 'Advanced' },
-    ],
-  },
+export const ROOMS=[
+
+
+{
+name:"Fridge Room",
+price:"FREE",
+bonus:"1x"
+},
+
+
+{
+name:"Trading Cave",
+price:"0.0006 ETH",
+bonus:"1.2x"
+},
+
+
+{
+name:"Moon Lab",
+price:"0.001 ETH",
+bonus:"1.5x"
+},
+
+
+{
+name:"Wassie Palace",
+price:"0.002 ETH",
+bonus:"2x"
+},
+
+
+{
+name:"Cosmic Arena",
+price:"0.005 ETH",
+bonus:"3x"
+}
+
+
 ]
