@@ -1,16 +1,39 @@
-import { join } from 'path'
-import { Config } from 'tailwindcss'
+import type {Config} from "tailwindcss";
 
-const config: Config = {
-  content: [
-    './app/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './pages/**/*.{ts,tsx}',
-  ],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
+
+const config:Config={
+
+content:[
+
+"./app/**/*.{ts,tsx}",
+
+"./components/**/*.{ts,tsx}"
+
+],
+
+theme:{
+
+
+extend:{
+
+
+colors:{
+
+
+wassie:
+
+"#39ff88"
+
+
 }
 
-export default config
+
+}
+
+
+}
+
+
+}
+
+export default config;
