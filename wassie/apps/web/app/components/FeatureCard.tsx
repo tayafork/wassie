@@ -1,8 +1,40 @@
-export default function FeatureCard({ feature }: { feature: any }){
-  return (
-    <div className="p-2 bg-slate-50 rounded-md border border-slate-100 text-sm">
-      <div className="font-medium">{feature.title}</div>
-      <div className="text-slate-500">{feature.value}</div>
-    </div>
-  )
+export default function FeatureCard({
+
+title,
+text
+
+}:{
+
+title:string;
+
+text:string
+
+}){
+
+
+return(
+
+<div className="panel p-6">
+
+<h3 className="
+text-xl
+text-wassie
+">
+
+{title}
+
+</h3>
+
+
+<p className="mt-3 text-gray-400">
+
+{text}
+
+</p>
+
+
+</div>
+
+)
+
 }
